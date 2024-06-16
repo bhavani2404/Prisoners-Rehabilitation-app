@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5pt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@+id/recyclerview1"
+            android:layout_alignParentStart="true"
+            android:id="@+id/webside"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/purple_500"
+            android:layout_marginStart="72dp"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="38dp"
+            android:text="https://www.youtube.com/"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
