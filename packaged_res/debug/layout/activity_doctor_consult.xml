@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="49dp">
+
+
+        <TextView
+            android:id="@+id/tl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:text="Post Query"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15pt" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/tl1"
+            android:src="@drawable/doctor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:background="@color/purple_500"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/entusr"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="20pt"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:ems="15"
+                android:inputType="textEmailAddress"
+                android:gravity="center"
+                android:hint="Enter Your Query"
+                android:textColor="@color/purple_700"
+                android:textColorHint="@color/purple_700" />
+
+
+
+
+            <Button
+                android:id="@+id/ulog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Send" />
+            <TextView
+                android:id="@+id/doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_500"
+                android:text="View Solution"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15pt" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
